@@ -8,91 +8,101 @@
   </head>
   <body>
     <main class="phone" aria-label="四会美丽乡村首页">
-      <header class="status-bar">
-        <strong>12:00</strong>
-        <span class="status-icons">▮▮▮ Wi-Fi ▰</span>
-      </header>
+      <section class="top-scene">
+        <header class="status-bar">
+          <strong>09:12</strong>
+          <span>▮▮▮ Wi-Fi ▰</span>
+        </header>
 
-      <nav class="top-bar" aria-label="页面标题">
-        <h1>首页</h1>
-        <button class="capsule" aria-label="更多"><span>•••</span><span>○</span></button>
-      </nav>
+        <nav class="mini-nav" aria-label="顶部导航">
+          <span>四会美丽乡村 · 石狗村</span>
+          <button aria-label="更多">••• ○</button>
+        </nav>
 
-      <section class="welcome">
-        <h2>四会美丽乡村&nbsp; 欢迎您</h2>
+        <div class="headline">
+          <h1>首页</h1>
+          <p>村务、服务与乡村动态一屏掌握</p>
+        </div>
       </section>
 
       <section class="hero-card" aria-label="自然风光轮播">
-        <div class="landscape" aria-hidden="true">
-          <span class="mountain mountain-a"></span>
-          <span class="mountain mountain-b"></span>
-          <span class="field field-a"></span>
-          <span class="field field-b"></span>
-          <span class="field field-c"></span>
-          <span class="house-roof"></span>
-          <span class="house-body"></span>
+        <div class="field-art" aria-hidden="true">
+          <i class="hill hill-blue"></i>
+          <i class="hill hill-green"></i>
+          <i class="field field-left"></i>
+          <i class="field field-right"></i>
+          <i class="roof"></i>
+          <i class="house"></i>
         </div>
-        <div class="hero-copy">
-          <h3>自然风光</h3>
-          <p>春日农耕景象，生态美景</p>
-        </div>
-        <div class="dots" aria-label="第 2 张，共 3 张">
-          <span></span><span class="active"></span><span></span>
-        </div>
+        <span class="tag">推荐</span>
+        <h2>自然风光</h2>
+        <p>春日农耕景象，生态美景</p>
+        <div class="dots"><i></i><i class="active"></i><i></i></div>
       </section>
 
-      <section class="notice-card">
-        <div class="notice-icon" aria-hidden="true">◀</div>
-        <div>
-          <div class="notice-head">
-            <strong>村务通知</strong>
-            <time datetime="2025-07-23T10:50:00">2025-07-23 10:50:00</time>
+      <section class="feature-zone" aria-label="主要功能">
+        <article class="ai-card">
+          <div>
+            <h2>AI智能助手</h2>
+            <p>村民问题快速解答</p>
+            <button>开始咨询</button>
           </div>
-          <p>今日下午3点召开村民代表大会，讨论新村规</p>
+          <img src="./assets/icons/ai.png" alt="" />
+        </article>
+
+        <div class="side-cards">
+          <article>
+            <div>
+              <h2>村务通知</h2>
+              <p>3点村民大会</p>
+            </div>
+            <img src="./assets/icons/notice.png" alt="" />
+          </article>
+          <article>
+            <div>
+              <h2>成为村民</h2>
+              <p>解锁更多内容</p>
+            </div>
+            <img src="./assets/icons/village-entry.png" alt="" />
+          </article>
         </div>
       </section>
 
-      <section class="service-grid" aria-label="服务入口">
-        <button><span></span>事件上报</button>
-        <button><span></span>积分制</button>
-        <button><span></span>一件事专区</button>
-        <button><span></span>热门服务</button>
-        <button><span></span>代办服务</button>
-        <button><span></span>政策查询</button>
-        <button><span></span>农业农产</button>
-        <button><span></span>更多</button>
+      <section class="service-card" aria-label="热门服务">
+        <button><img src="./assets/icons/report.png" alt="" /><span>事件上报</span></button>
+        <button><img src="./assets/icons/points.png" alt="" /><span>积分制</span></button>
+        <button><img src="./assets/icons/one-stop.png" alt="" /><span>一件事专区</span></button>
+        <button><img src="./assets/icons/hot-service.png" alt="" /><span>热门服务</span></button>
+        <button><img src="./assets/icons/agency.png" alt="" /><span>代办服务</span></button>
+        <button><img src="./assets/icons/policy.png" alt="" /><span>政策查询</span></button>
+        <button><img src="./assets/icons/agriculture.png" alt="" /><span>农业农产</span></button>
+        <button><img src="./assets/icons/news.png" alt="" /><span>乡村动态</span></button>
       </section>
 
-      <section class="tabs" aria-label="内容分类">
-        <button class="active">美丽乡村</button>
-        <button>应急通知</button>
-        <button>法制宣传</button>
-        <button>乡村动态</button>
-      </section>
-
-      <article class="feed-card" aria-label="乡村动态内容">
-        <div class="thumb"></div>
-        <div>
-          <h3>石狗村开展美丽乡村示范活动</h3>
-          <p>2025-07-23 10:00:00　石狗村村委会</p>
+      <section class="news-card" aria-label="乡村内容">
+        <div class="tabs">
+          <button class="active">美丽乡村</button>
+          <button>应急通知</button>
+          <button>法制宣传</button>
+          <button>积分动态</button>
         </div>
-      </article>
+        <article>
+          <div class="thumb"></div>
+          <div>
+            <h2>石狗村开展美丽乡村示范活动</h2>
+            <p>2025-07-23 10:00　石狗村村委会</p>
+          </div>
+        </article>
+      </section>
 
-      <aside class="member-mask" aria-live="polite">
+      <aside class="member-mask">
         <strong>成为村民，查看更多精彩内容</strong>
         <button id="joinVillage">入村</button>
       </aside>
 
-      <button class="ai-assistant" aria-label="AI助手">
-        <span class="avatar">
-          <span class="hair"></span>
-          <span class="face"></span>
-          <span class="eye eye-left"></span>
-          <span class="eye eye-right"></span>
-          <span class="ear ear-left"></span>
-          <span class="ear ear-right"></span>
-        </span>
-        <strong>AI助手</strong>
+      <button class="ai-float" aria-label="AI助手">
+        <img src="./assets/icons/ai.png" alt="" />
+        <span>AI助手</span>
       </button>
 
       <nav class="bottom-nav" aria-label="底部导航">

@@ -2,12 +2,12 @@ const joinButton = document.querySelector("#joinVillage");
 const mask = document.querySelector(".member-mask");
 const tabs = document.querySelectorAll(".tabs button");
 const navItems = document.querySelectorAll(".bottom-nav button");
-const dots = document.querySelectorAll(".dots span");
+const dots = document.querySelectorAll(".dots i");
 
 joinButton.addEventListener("click", () => {
   mask.querySelector("strong").textContent = "已入村，欢迎查看乡村动态";
   joinButton.textContent = "已入村";
-  mask.style.background = "rgba(22, 190, 131, 0.88)";
+  mask.style.background = "rgba(22, 190, 131, 0.9)";
 });
 
 tabs.forEach((tab) => {
@@ -29,4 +29,4 @@ setInterval(() => {
   dots[activeDot].classList.remove("active");
   activeDot = (activeDot + 1) % dots.length;
   dots[activeDot].classList.add("active");
-}, 2600);
+}, 2400);
