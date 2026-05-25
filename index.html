@@ -13,70 +13,69 @@
           <strong>09:12</strong>
           <span>▮▮▮ Wi-Fi ▰</span>
         </header>
-
         <nav class="mini-nav" aria-label="顶部导航">
           <span>四会美丽乡村 · 石狗村</span>
           <button aria-label="更多">••• ○</button>
         </nav>
-
         <div class="headline">
+          <p>乡村服务平台</p>
           <h1>首页</h1>
-          <p>村务、服务与乡村动态一屏掌握</p>
         </div>
       </section>
 
       <section class="hero-card" aria-label="自然风光轮播">
-        <div class="field-art" aria-hidden="true">
-          <i class="hill hill-blue"></i>
-          <i class="hill hill-green"></i>
-          <i class="field field-left"></i>
-          <i class="field field-right"></i>
-          <i class="roof"></i>
-          <i class="house"></i>
+        <img src="./assets/banners/village-landscape-banner.png" alt="" />
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <span>推荐</span>
+          <h2>自然风光</h2>
+          <p>春日农耕景象，生态美景</p>
         </div>
-        <span class="tag">推荐</span>
-        <h2>自然风光</h2>
-        <p>春日农耕景象，生态美景</p>
         <div class="dots"><i></i><i class="active"></i><i></i></div>
+      </section>
+
+      <section class="notice-strip" aria-label="村务通知">
+        <span class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M5 11v4a2 2 0 0 0 2 2h2l4 3v-6l6-3V7l-6-3v6H7a2 2 0 0 0-2 1z"/><path d="M18 9h3"/></svg>
+        </span>
+        <div>
+          <strong>村务通知</strong>
+          <p>今日下午3点召开村民代表大会，讨论新村规</p>
+        </div>
+        <time datetime="2025-07-23T10:50:00">10:50</time>
       </section>
 
       <section class="feature-zone" aria-label="主要功能">
         <article class="ai-card">
-          <div>
+          <div class="feature-copy">
             <h2>AI智能助手</h2>
-            <p>村民问题快速解答</p>
+            <p>政策、办事与村务问题快速解答</p>
             <button>开始咨询</button>
           </div>
-          <img src="./assets/icons/ai.png" alt="" />
+          <span class="feature-icon ai">
+            <svg viewBox="0 0 24 24"><path d="M12 3 4.5 7.2 12 11.4l7.5-4.2L12 3z"/><path d="M4.5 7.2v8.3L12 21V11.4"/><path d="M19.5 7.2v8.3L12 21"/><path d="M9 8.9 15 5.5"/></svg>
+          </span>
         </article>
-
-        <div class="side-cards">
-          <article>
-            <div>
-              <h2>村务通知</h2>
-              <p>3点村民大会</p>
-            </div>
-            <img src="./assets/icons/notice.png" alt="" />
-          </article>
-          <article>
-            <div>
-              <h2>成为村民</h2>
-              <p>解锁更多内容</p>
-            </div>
-            <img src="./assets/icons/village-entry.png" alt="" />
-          </article>
-        </div>
+        <article class="join-card">
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg>
+          </span>
+          <div>
+            <h2>成为村民</h2>
+            <p>解锁服务与动态</p>
+          </div>
+        </article>
       </section>
 
       <section class="service-card" aria-label="热门服务">
-        <button><img src="./assets/icons/report.png" alt="" /><span>事件上报</span></button>
-        <button><img src="./assets/icons/points.png" alt="" /><span>积分制</span></button>
-        <button><img src="./assets/icons/one-stop.png" alt="" /><span>一件事专区</span></button>
-        <button><img src="./assets/icons/hot-service.png" alt="" /><span>热门服务</span></button>
-        <button><img src="./assets/icons/agency.png" alt="" /><span>代办服务</span></button>
-        <button><img src="./assets/icons/policy.png" alt="" /><span>政策查询</span></button>
-        <button><img src="./assets/icons/agriculture.png" alt="" /><span>农业农产</span></button>
-        <button><img src="./assets/icons/news.png" alt="" /><span>乡村动态</span></button>
+        <button data-service="report"><span><svg viewBox="0 0 24 24"><path d="M8 4h8l3 3v13H5V4h3z"/><path d="M15 4v4h4"/><path d="M8 13h8"/><path d="M8 17h5"/></svg></span>事件上报</button>
+        <button data-service="points"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 8v8"/><path d="M9 11h6"/></svg></span>积分制</button>
+        <button data-service="one"><span><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M8.5 10h7"/><path d="M8.5 14h5"/><path d="M16 16.5l2 2"/></svg></span>一件事专区</button>
+        <button data-service="hot"><span><svg viewBox="0 0 24 24"><path d="M13 3c2 3-1 4.5 2 7 1.8 1.5 3 3 3 5.2A6 6 0 0 1 6 15c0-2.7 1.7-4.5 3.5-6.2.5 2 2.2 2.8 3.5 1.2"/></svg></span>热门服务</button>
+        <button data-service="agency"><span><svg viewBox="0 0 24 24"><path d="M4 7h6l2 2h8v10H4V7z"/><path d="M8 13h8"/></svg></span>代办服务</button>
+        <button data-service="policy"><span><svg viewBox="0 0 24 24"><path d="M7 4h10v16H7z"/><path d="M10 8h4"/><path d="M10 12h4"/><circle cx="17" cy="17" r="3"/><path d="m19.2 19.2 2 2"/></svg></span>政策查询</button>
+        <button data-service="agri"><span><svg viewBox="0 0 24 24"><path d="M12 20V9"/><path d="M12 12C7 12 5 9 5 5c5 0 7 3 7 7z"/><path d="M12 15c5 0 7-3 7-7-5 0-7 3-7 7z"/></svg></span>农业农产</button>
+        <button data-service="more"><span><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/></svg></span>更多</button>
       </section>
 
       <section class="news-card" aria-label="乡村内容">
@@ -84,7 +83,7 @@
           <button class="active">美丽乡村</button>
           <button>应急通知</button>
           <button>法制宣传</button>
-          <button>积分动态</button>
+          <button>乡村动态</button>
         </div>
         <article>
           <div class="thumb"></div>
@@ -101,15 +100,15 @@
       </aside>
 
       <button class="ai-float" aria-label="AI助手">
-        <img src="./assets/icons/ai.png" alt="" />
+        <svg viewBox="0 0 24 24"><path d="M12 3 4.5 7.2 12 11.4l7.5-4.2L12 3z"/><path d="M4.5 7.2v8.3L12 21V11.4"/><path d="M19.5 7.2v8.3L12 21"/></svg>
         <span>AI助手</span>
       </button>
 
       <nav class="bottom-nav" aria-label="底部导航">
-        <button class="active">◆<span>首页</span></button>
-        <button>▦<span>村务</span></button>
-        <button>▦<span>服务</span></button>
-        <button>▦<span>我的</span></button>
+        <button class="active"><svg viewBox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5"/><path d="M6.5 10v9h11v-9"/></svg><span>首页</span></button>
+        <button><svg viewBox="0 0 24 24"><path d="M6 5h12v14H6z"/><path d="M9 9h6"/><path d="M9 13h6"/></svg><span>村务</span></button>
+        <button><svg viewBox="0 0 24 24"><rect x="4" y="5" width="7" height="7" rx="2"/><rect x="13" y="5" width="7" height="7" rx="2"/><rect x="4" y="14" width="7" height="5" rx="2"/><rect x="13" y="14" width="7" height="5" rx="2"/></svg><span>服务</span></button>
+        <button><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c1-4 4-6 6.5-6s5.5 2 6.5 6"/></svg><span>我的</span></button>
         <i></i>
       </nav>
     </main>
